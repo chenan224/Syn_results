@@ -1,0 +1,77 @@
+===SYN_BLOCK=== 1
+[
+  {
+    "id": "cadb20",
+    "constant_part": "INSERT INTO preferences (playerID, preference, value) VALUES ({}, 'emailnotification', '')",
+    "info": "webchess/mainmenu.php:240:ASSIGN",
+    "args": [
+      {
+        "name": "cadb14[\"playerID\"]",
+        "data_type": "IS_LONG"
+      }
+    ],
+    "post_cons": []
+  },
+  {
+    "id": "cadb17",
+    "constant_part": "INSERT INTO preferences (playerID, preference, value) VALUES ({}, 'historylayout', 'columns')",
+    "info": "webchess/mainmenu.php:240:ASSIGN",
+    "args": [
+      {
+        "name": "cadb14[\"playerID\"]",
+        "data_type": "IS_LONG"
+      }
+    ],
+    "post_cons": []
+  },
+  {
+    "id": "cadb19",
+    "constant_part": "INSERT INTO preferences (playerID, preference, value) VALUES ({}, 'autoreload', '10')",
+    "info": "webchess/mainmenu.php:240:ASSIGN",
+    "args": [
+      {
+        "name": "cadb14[\"playerID\"]",
+        "data_type": "IS_LONG"
+      }
+    ],
+    "post_cons": []
+  },
+  {
+    "id": "cadb21",
+    "constant_part": "INSERT INTO preferences (playerID, preference, value) VALUES ({}, 'replayall', 'false')",
+    "info": "webchess/mainmenu.php:240:ASSIGN",
+    "args": [
+      {
+        "name": "cadb14[\"playerID\"]",
+        "data_type": "IS_LONG"
+      }
+    ],
+    "post_cons": []
+  },
+  {
+    "id": "cadb18",
+    "constant_part": "INSERT INTO preferences (playerID, preference, value) VALUES ({}, 'theme', 'gnuchess_simple')",
+    "info": "webchess/mainmenu.php:240:ASSIGN",
+    "args": [
+      {
+        "name": "cadb14[\"playerID\"]",
+        "data_type": "IS_LONG"
+      }
+    ],
+    "post_cons": []
+  },
+  {
+    "id": "cadb16",
+    "constant_part": "INSERT INTO preferences (playerID, preference, value) VALUES ({}, 'history', 'pgn')",
+    "info": "webchess/mainmenu.php:240:ASSIGN",
+    "args": [
+      {
+        "name": "cadb14[\"playerID\"]",
+        "data_type": "IS_LONG"
+      }
+    ],
+    "post_cons": []
+  }
+]
+===================
+

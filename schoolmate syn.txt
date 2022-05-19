@@ -1,0 +1,285 @@
+===SYN_BLOCK=== 3
+[
+  {
+    "id": "cadb16",
+    "constant_part": "INSERT INTO courses (semesterid, termid, coursename, teacherid, sectionnum, roomnum, periodnum, dotw, substituteid) VALUES('{}', '{}', '{}', '{}', '{}', '{}', '{}','{undef}','{}')",
+    "info": "schoolmate/ManageClasses.php:42:ROPE_END",
+    "args": [
+      {
+        "name": "_POST[\"semester\"]",
+        "data_type": "IS_LONG"
+      },
+      {
+        "name": "cadb15[\"0\"]",
+        "data_type": "DEFAULT"
+      },
+      {
+        "name": "_POST[\"title\"]",
+        "data_type": "DEFAULT"
+      },
+      {
+        "name": "_POST[\"teacher\"]",
+        "data_type": "DEFAULT"
+      },
+      {
+        "name": "_POST[\"sectionnum\"]",
+        "data_type": "DEFAULT"
+      },
+      {
+        "name": "_POST[\"roomnum\"]",
+        "data_type": "DEFAULT"
+      },
+      {
+        "name": "_POST[\"periodnum\"]",
+        "data_type": "DEFAULT"
+      },
+      {
+        "name": "_POST[\"substitute\"]",
+        "data_type": "DEFAULT"
+      }
+    ],
+    "post_cons": []
+  },
+  {
+    "id": "cadb18",
+    "constant_part": "UPDATE courses SET secondcourseid = {} WHERE courseid = {}",
+    "info": "schoolmate/ManageClasses.php:56:ROPE_END",
+    "args": [
+      {
+        "op1": {
+          "data_type": "IS_STRING",
+          "value": "mysql_insert_id"
+        },
+        "op": "DO_FCALL",
+        "op2": {
+          "name": "cadb17",
+          "data_type": "DEFAULT"
+        },
+        "data_type": "DEFAULT",
+        "info": "schoolmate/ManageClasses.php:53:DO_FCALL"
+      },
+      {
+        "op1": {
+          "data_type": "IS_STRING",
+          "value": "mysql_insert_id"
+        },
+        "op": "DO_FCALL",
+        "op2": {
+          "name": "cadb16",
+          "data_type": "DEFAULT"
+        },
+        "data_type": "DEFAULT",
+        "info": "schoolmate/ManageClasses.php:46:DO_FCALL"
+      }
+    ],
+    "post_cons": []
+  },
+  {
+    "id": "cadb17",
+    "constant_part": "INSERT INTO courses (semesterid, termid, coursename, teacherid, sectionnum, roomnum, periodnum, dotw, substituteid) VALUES( '{}', '{}', '{}', '{}', '{}', '{}', '{}','{undef}','{}')",
+    "info": "schoolmate/ManageClasses.php:49:ROPE_END",
+    "args": [
+      {
+        "name": "_POST[\"semester2\"]",
+        "data_type": "IS_LONG"
+      },
+      {
+        "name": "cadb15[\"0\"]",
+        "data_type": "DEFAULT"
+      },
+      {
+        "name": "_POST[\"title\"]",
+        "data_type": "DEFAULT"
+      },
+      {
+        "name": "_POST[\"teacher\"]",
+        "data_type": "DEFAULT"
+      },
+      {
+        "name": "_POST[\"sectionnum\"]",
+        "data_type": "DEFAULT"
+      },
+      {
+        "name": "_POST[\"roomnum\"]",
+        "data_type": "DEFAULT"
+      },
+      {
+        "name": "_POST[\"periodnum\"]",
+        "data_type": "DEFAULT"
+      },
+      {
+        "name": "_POST[\"substitute\"]",
+        "data_type": "DEFAULT"
+      }
+    ],
+    "post_cons": []
+  },
+  {
+    "id": "cadb19",
+    "constant_part": "UPDATE courses SET secondcourseid = {} WHERE courseid = {}",
+    "info": "schoolmate/ManageClasses.php:57:ROPE_END",
+    "args": [
+      {
+        "op1": {
+          "data_type": "IS_STRING",
+          "value": "mysql_insert_id"
+        },
+        "op": "DO_FCALL",
+        "op2": {
+          "name": "cadb16",
+          "data_type": "DEFAULT"
+        },
+        "data_type": "DEFAULT",
+        "info": "schoolmate/ManageClasses.php:46:DO_FCALL"
+      },
+      {
+        "op1": {
+          "data_type": "IS_STRING",
+          "value": "mysql_insert_id"
+        },
+        "op": "DO_FCALL",
+        "op2": {
+          "name": "cadb17",
+          "data_type": "DEFAULT"
+        },
+        "data_type": "DEFAULT",
+        "info": "schoolmate/ManageClasses.php:53:DO_FCALL"
+      }
+    ],
+    "post_cons": []
+  }
+]
+===================
+
+[
+  {
+    "id": "cadb21",
+    "constant_part": "INSERT INTO courses (semesterid, termid, coursename, teacherid, sectionnum, roomnum, periodnum, dotw, substituteid) VALUES( '{}', '{}', '{}', '{}', '{}', '{}', '{}','{}','{}')",
+    "info": "schoolmate/ManageClasses.php:49:ROPE_END",
+    "args": [
+      {
+        "name": "_POST[\"semester2\"]",
+        "data_type": "IS_LONG"
+      },
+      {
+        "name": "cadb15[\"0\"]",
+        "data_type": "DEFAULT"
+      },
+      {
+        "name": "_POST[\"title\"]",
+        "data_type": "DEFAULT"
+      },
+      {
+        "name": "_POST[\"teacher\"]",
+        "data_type": "DEFAULT"
+      },
+      {
+        "name": "_POST[\"sectionnum\"]",
+        "data_type": "DEFAULT"
+      },
+      {
+        "name": "_POST[\"roomnum\"]",
+        "data_type": "DEFAULT"
+      },
+      {
+        "name": "_POST[\"periodnum\"]",
+        "data_type": "DEFAULT"
+      },
+      {
+        "name": "_POST[\"Days\"][\"0\"]",
+        "data_type": "DEFAULT"
+      },
+      {
+        "name": "_POST[\"substitute\"]",
+        "data_type": "DEFAULT"
+      }
+    ],
+    "post_cons": []
+  },
+  {
+    "id": "cadb20",
+    "constant_part": "INSERT INTO courses (semesterid, termid, coursename, teacherid, sectionnum, roomnum, periodnum, dotw, substituteid) VALUES('{}', '{}', '{}', '{}', '{}', '{}', '{}','{}','{}')",
+    "info": "schoolmate/ManageClasses.php:42:ROPE_END",
+    "args": [
+      {
+        "name": "_POST[\"semester\"]",
+        "data_type": "IS_LONG"
+      },
+      {
+        "name": "cadb15[\"0\"]",
+        "data_type": "DEFAULT"
+      },
+      {
+        "name": "_POST[\"title\"]",
+        "data_type": "DEFAULT"
+      },
+      {
+        "name": "_POST[\"teacher\"]",
+        "data_type": "DEFAULT"
+      },
+      {
+        "name": "_POST[\"sectionnum\"]",
+        "data_type": "DEFAULT"
+      },
+      {
+        "name": "_POST[\"roomnum\"]",
+        "data_type": "DEFAULT"
+      },
+      {
+        "name": "_POST[\"periodnum\"]",
+        "data_type": "DEFAULT"
+      },
+      {
+        "name": "_POST[\"Days\"][\"0\"]",
+        "data_type": "DEFAULT"
+      },
+      {
+        "name": "_POST[\"substitute\"]",
+        "data_type": "DEFAULT"
+      }
+    ],
+    "post_cons": []
+  }
+]
+===================
+
+[
+  {
+    "id": "cadb123",
+    "constant_part": "INSERT INTO parents (userid, fname, lname) VALUES('{}', '{}', '{}')",
+    "info": "schoolmate/ManageParents.php:32:ROPE_END",
+    "args": [
+      {
+        "name": "_POST[\"username\"]",
+        "data_type": "DEFAULT"
+      },
+      {
+        "name": "_POST[\"fname\"]",
+        "data_type": "DEFAULT"
+      },
+      {
+        "name": "_POST[\"lname\"]",
+        "data_type": "DEFAULT"
+      }
+    ],
+    "post_cons": []
+  },
+  {
+    "id": "cadb125",
+    "constant_part": "INSERT INTO parent_student_match (parentid, studentid) VALUES( '{}', '{}')",
+    "info": "schoolmate/ManageParents.php:42:ROPE_END",
+    "args": [
+      {
+        "name": "cadb124[\"0\"]",
+        "data_type": "DEFAULT"
+      },
+      {
+        "name": "_POST[\"student\"]",
+        "data_type": "DEFAULT"
+      }
+    ],
+    "post_cons": []
+  }
+]
+===================
+
