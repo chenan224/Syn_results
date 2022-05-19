@@ -1,0 +1,117 @@
+===SYN_BLOCK=== 1
+{
+  "id": "cadb44",
+  "constant_part": "INSERT INTO `orders_info` \n\t(`order_id`,`user_id`,`f_name`, `email`,`address`, \n\t`city`, `state`, `zip`, `cardname`,`cardnumber`,`expdate`,`prod_count`,`total_amt`,`cvv`) \n\tVALUES ({}, '{}','{}','{}', \n    '{}', '{}', '{}', '{}','{}','','{}','{}','{}','{}')",
+  "info": "onlineshop/checkout_process.php:40:ASSIGN",
+  "args": [
+    {
+      "op1": {
+        "name": "cadb43[\"max_val\"]",
+        "data_type": "IS_LONG"
+      },
+      "op": "+",
+      "op2": {
+        "data_type": "IS_LONG",
+        "value": "1"
+      },
+      "data_type": "onlineshop/checkout_process.php:32:ADD",
+      "info": "IS_STRING"
+    },
+    {
+      "name": "_SESSION[\"uid\"]",
+      "data_type": "DEFAULT"
+    },
+    {
+      "name": "_POST[\"firstname\"]",
+      "data_type": "DEFAULT"
+    },
+    {
+      "name": "_POST[\"email\"]",
+      "data_type": "DEFAULT"
+    },
+    {
+      "name": "_POST[\"address\"]",
+      "data_type": "DEFAULT"
+    },
+    {
+      "name": "_POST[\"city\"]",
+      "data_type": "DEFAULT"
+    },
+    {
+      "name": "_POST[\"state\"]",
+      "data_type": "DEFAULT"
+    },
+    {
+      "name": "_POST[\"zip\"]",
+      "data_type": "DEFAULT"
+    },
+    {
+      "name": "_POST[\"cardname\"]",
+      "data_type": "DEFAULT"
+    },
+    {
+      "name": "_POST[\"expdate\"]",
+      "data_type": "DEFAULT"
+    },
+    {
+      "name": "_POST[\"total_count\"]",
+      "data_type": "IS_LONG"
+    },
+    {
+      "name": "_POST[\"total_price\"]",
+      "data_type": "DEFAULT"
+    },
+    {
+      "name": "_POST[\"cvv\"]",
+      "data_type": "DEFAULT"
+    }
+  ],
+  "post_cons": []
+}
+{
+  "id": "cadb46",
+  "constant_part": "INSERT INTO `order_products` \n            (`order_pro_id`,`order_id`,`product_id`,`qty`,`amt`) \n            VALUES (NULL, '{}','{}','{}','0')",
+  "info": "onlineshop/checkout_process.php:59:ASSIGN",
+  "args": [
+    {
+      "op1": {
+        "name": "cadb43[\"max_val\"]",
+        "data_type": "IS_LONG"
+      },
+      "op": "+",
+      "op2": {
+        "data_type": "IS_LONG",
+        "value": "1"
+      },
+      "data_type": "onlineshop/checkout_process.php:32:ADD",
+      "info": "IS_STRING"
+    },
+    {
+      "op1": {
+        "data_type": "IS_LONG",
+        "value": "0"
+      },
+      "op": "+",
+      "op2": {
+        "name": "_POST[\"prod_id_1\"]",
+        "data_type": "IS_LONG"
+      },
+      "data_type": "onlineshop/checkout_process.php:51:ADD",
+      "info": "IS_LONG"
+    },
+    {
+      "op1": {
+        "data_type": "IS_LONG",
+        "value": "0"
+      },
+      "op": "+",
+      "op2": {
+        "name": "_POST[\"prod_qty_1\"]",
+        "data_type": "IS_STRING"
+      },
+      "data_type": "onlineshop/checkout_process.php:55:ADD",
+      "info": "IS_LONG"
+    }
+  ],
+  "post_cons": []
+}
